@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>feedbackloop — testers de verdad para tus proyectos</title>
+  <meta name="description"
+    content="Comunidad estudiantil para validar prototipos con usuarios reales. Tu tiempo como moneda." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============ TOP NAV ============ -->
+  <header class="nav">
+    <a class="brand" href="#" aria-label="feedbackloop">
+      <img class="brand-logo" src="logo_light.svg" alt="feedbackloop" />
+    </a>
+    <nav class="nav-links">
+      <a href="#how">Cómo funciona</a>
+      <a href="#features">Features</a>
+      <a href="#community">Comunidad</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn--ghost" href="#">Login</a>
+      <a class="btn btn--outline" href="#">Empieza gratis ↗</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <span class="stamp stamp--ink stamp--abs stamp--top-right">+3 créditos</span>
+    <span class="stamp stamp--abs stamp--mid-left">5 min · onboarding</span>
+
+    <div class="hero-copy">
+      <div class="eyebrow-pill">
+        <span class="dot"></span>
+        hecho por estudiantes, para estudiantes
+      </div>
+      <h1 class="display">
+        Consigue testers <br />
+        <span class="highlight">de verdad</span> para tus proyectos.
+      </h1>
+      <p class="lede">
+        Valida tus prototipos con estudiantes reales. Gana créditos ayudando a otros.
+        Una comunidad colaborativa, no un SaaS corporativo.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn btn--lime btn--lg" href="#">Empieza gratis →</a>
+        <a class="btn btn--lg" href="#how">Ver cómo funciona</a>
+      </div>
+    </div>
+
+    <!-- Credit loop diagram -->
+    <div class="loop">
+      <div class="loop-node" style="left:0; top:80px;">
+        <div class="loop-label">Evalúa</div>
+        <div class="loop-sub">proyectos de otros</div>
+      </div>
+      <div class="loop-node loop-node--mint" style="left:360px; top:0;">
+        <div class="loop-label">Gana</div>
+        <div class="loop-sub">créditos</div>
+      </div>
+      <div class="loop-node" style="left:720px; top:80px;">
+        <div class="loop-label">Publica</div>
+        <div class="loop-sub">tu prototipo</div>
+      </div>
+      <div class="loop-node" style="left:360px; top:200px;">
+        <div class="loop-label">Recibe</div>
+        <div class="loop-sub">feedback real</div>
+      </div>
+      <svg class="loop-arrows" viewBox="0 0 920 360" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 z" fill="currentColor" />
+          </marker>
+        </defs>
+        <path d="M 210 110 Q 280 70 350 60" />
+        <path d="M 570 60 Q 640 70 710 110" />
+        <path d="M 720 220 Q 640 270 570 270" />
+        <path d="M 350 270 Q 280 270 200 220" />
+      </svg>
+      <div class="loop-caption">tu tiempo = moneda</div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="problem">
+    <div class="problem-head">
+      <h2 class="t-heading-xl">
+        Conseguir testers no debería tomar
+        <em class="wavy">horas.</em>
+      </h2>
+      <span class="stamp stamp--paper">el dolor real</span>
+    </div>
+    <p class="problem-lede">
+      La mayoría termina buscando en grupos de WhatsApp, amigos,
+      o personas que ni siquiera pertenecen a su público objetivo.
+    </p>
+    <div class="pain-grid">
+      <article class="pain-card pain-card--tilt-1">
+        <i class="pain-icon ph-duotone ph-clock-countdown" aria-hidden="true"></i>
+        <h3>Respuestas tardías</h3>
+        <p>Pierdes tiempo esperando que alguien responda.</p>
+      </article>
+      <article class="pain-card pain-card--tilt-2">
+        <i class="pain-icon ph-duotone ph-chat-text" aria-hidden="true"></i>
+        <h3>Feedback superficial</h3>
+        <p>“Está bonito” “Todo bien” — gracias, supongo.</p>
+      </article>
+      <article class="pain-card pain-card--tilt-3">
+        <i class="pain-icon ph-duotone ph-target" aria-hidden="true"></i>
+        <h3>Usuarios incorrectos</h3>
+        <p>Tus amigos no son tu público real.</p>
+      </article>
+      <article class="pain-card pain-card--tilt-4">
+        <i class="pain-icon ph-duotone ph-flame" aria-hidden="true"></i>
+        <h3>Estrés antes de entregas</h3>
+        <p>AVs, parciales, TFs. Cero tiempo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how" id="how">
+    <div class="how-head">
+      <h2 class="t-heading-xl">Así funciona.</h2>
+      <p class="how-sub">Cuatro pasos. Cero tarjeta de crédito. Cero pretensión.</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-n">01</div>
+        <div class="step-mock"></div>
+        <h3>Evalúa proyectos</h3>
+        <p>Explora apps, webs y prototipos creados por otros estudiantes.</p>
+      </li>
+      <li class="step">
+        <div class="step-n step-n--accent">02</div>
+        <div class="step-mock"></div>
+        <h3>Gana créditos</h3>
+        <p>Cada evaluación completada te suma créditos a tu wallet.</p>
+      </li>
+      <li class="step">
+        <div class="step-n">03</div>
+        <div class="step-mock"></div>
+        <h3>Publica tu proyecto</h3>
+        <p>Usa créditos para conseguir testers reales para tus entregables.</p>
+      </li>
+      <li class="step">
+        <div class="step-n">04</div>
+        <div class="step-mock"></div>
+        <h3>Mejora con feedback</h3>
+        <p>Métricas, comentarios útiles y reportes descargables.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ WHY STUDENTS ============ -->
+  <section class="why" id="community">
+    <h2 class="t-heading-xl">
+      Diseñado para la realidad universitaria.
+    </h2>
+    <div class="why-grid">
+      <article class="why-card">
+        <i class="why-icon ph-duotone ph-timer" aria-hidden="true"></i>
+        <h3>Ahorra tiempo</h3>
+        <p>Sin perseguir personas durante horas.</p>
+      </article>
+      <article class="why-card">
+        <i class="why-icon ph-duotone ph-star" aria-hidden="true"></i>
+        <h3>Feedback útil</h3>
+        <p>Evaluaciones calificadas por utilidad.</p>
+      </article>
+      <article class="why-card">
+        <i class="why-icon ph-duotone ph-coin" aria-hidden="true"></i>
+        <h3>Tu tiempo vale</h3>
+        <p>Ayudar también genera valor real.</p>
+      </article>
+      <article class="why-card">
+        <i class="why-icon ph-duotone ph-device-mobile" aria-hidden="true"></i>
+        <h3>Mobile-first</h3>
+        <p>Evalúa desde cualquier lugar.</p>
+      </article>
+      <article class="why-card">
+        <i class="why-icon ph-duotone ph-graduation-cap" aria-hidden="true"></i>
+        <h3>Verificable</h3>
+        <p>Evidencia real para entregas.</p>
+      </article>
+      <article class="why-card">
+        <i class="why-icon ph-duotone ph-lightning" aria-hidden="true"></i>
+        <h3>Créditos Express</h3>
+        <p>¿Urgente? Respuestas más rápidas.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <h2 class="t-heading-xl">
+      Todo lo que necesitas <br />
+      para validar mejor.
+    </h2>
+
+    <div class="feature-row">
+      <div class="feature-mock"></div>
+      <div class="feature-copy">
+        <div class="feature-num">01 / 06</div>
+        <h3>Sistema de créditos</h3>
+        <p>Economía colaborativa basada en reciprocidad. Cada evaluación suma, cada publicación cuesta. Balance siempre
+          visible.</p>
+      </div>
+    </div>
+
+    <div class="feature-row feature-row--reverse">
+      <div class="feature-mock"></div>
+      <div class="feature-copy">
+        <div class="feature-num">02 / 06</div>
+        <h3>Dashboard de evaluaciones</h3>
+        <p>Monitorea respuestas y progreso en tiempo real. Filtra por estado, perfil de tester, fecha.</p>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-mock"></div>
+      <div class="feature-copy">
+        <div class="feature-num">03 / 06</div>
+        <h3>Publicación de prototipos</h3>
+        <p>Comparte links de Figma, webs o apps fácilmente. Define encuesta y perfil de tester en minutos.</p>
+      </div>
+    </div>
+
+    <div class="feature-row feature-row--reverse">
+      <div class="feature-mock"></div>
+      <div class="feature-copy">
+        <div class="feature-num">04 / 06</div>
+        <h3>Reportes automáticos</h3>
+        <p>Descarga métricas y resultados organizados. Listo para anexar a tu entrega académica.</p>
+      </div>
+    </div>
+
+    <div class="feature-bonus">
+      <article class="feature-bonus-card">
+        <h3>Perfil personalizado</h3>
+        <p>Filtra proyectos según intereses.</p>
+      </article>
+      <article class="feature-bonus-card">
+        <h3>Sistema de reputación</h3>
+        <p>Feedback útil = mejores evaluaciones.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+      <div class="faq-intro">
+        <h2 class="t-heading-xl">Preguntas frecuentes</h2>
+        <p>¿Otra duda que no esté aquí? Escríbenos directo.</p>
+        <a class="btn btn--navy" href="#">Contactar →</a>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>¿Necesito pagar para usar la plataforma?<span class="faq-toggle">–</span></summary>
+          <div class="faq-answer">No. Puedes ganar créditos ayudando a otros estudiantes.</div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué puedo publicar?<span class="faq-toggle">+</span></summary>
+          <div class="faq-answer">Apps móviles, webs, prototipos Figma, videojuegos, encuestas y más.</div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo gano créditos?<span class="faq-toggle">+</span></summary>
+          <div class="faq-answer">Completando evaluaciones y dejando feedback útil.</div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Qué pasa si necesito testers urgente?<span class="faq-toggle">+</span></summary>
+          <div class="faq-answer">Puedes adquirir créditos Express para respuestas más rápidas.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <span class="stamp stamp--abs stamp--cta-left">gratis · siempre</span>
+    <span class="stamp stamp--abs stamp--cta-right">2 min para crear cuenta</span>
+    <h2 class="display display--final">
+      Empieza a validar <br />
+      con <span class="highlight">usuarios reales.</span>
+    </h2>
+    <a class="btn btn--lime btn--xl" href="#">crear cuenta gratis →</a>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="logo_dark.svg" alt="feedbackloop" />
+        <p>Comunidad estudiantil de validación. Tu tiempo como moneda.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Producto</h4>
+        <a href="#">Cómo funciona</a>
+        <a href="#">Features</a>
+        <a href="#">Créditos Express</a>
+      </div>
+      <div class="footer-col">
+        <h4>Comunidad</h4>
+        <a href="#">Para creadores</a>
+        <a href="#">Para evaluadores</a>
+        <a href="#">Universidades</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#">About</a>
+        <a href="#">Contacto</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Social</h4>
+        <a href="#"><i class="ph-bold ph-linkedin-logo" aria-hidden="true"></i> LinkedIn</a>
+        <a href="#"><i class="ph-bold ph-github-logo" aria-hidden="true"></i> GitHub</a>
+        <a href="#"><i class="ph-bold ph-instagram-logo" aria-hidden="true"></i> Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
