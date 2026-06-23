@@ -1,33 +1,21 @@
-/* ============================================================
-   feedbackloop — landing (Variant B · Playful Student)
-   Built from the Gumroad design system + wireframe playful layer
-   ============================================================ */
-
 :root {
-  /* Brand palette
-     - --accent  (mint  #98FBCB) is the principal brand color
-     - --ink     (navy  #000080) is the structural dark — text, borders, dark surfaces
-     - --pop     (lime  #DFFF00) is the small-dose pop accent
-  */
-  --accent: #98FBCB;        /* PRIMARY — mint. Highlights, FAQ bg, CTA solid */
-  --accent-soft: #D6FBE7;   /* ~50% white mix of mint — section bgs */
-  --accent-wash: #F0FEF7;   /* ~15% white mix — page-wide mint warmth */
-  --ink: #000080;           /* navy — text, borders, dark sections */
-  --pop: #DFFF00;           /* lime — stamps */
+  --accent: #98FBCB;
+  --accent-soft: #D6FBE7;
+  --accent-wash: #F0FEF7;
+  --ink: #000080;
+  --pop: #DFFF00;
 
-  --ink-soft: #5C5C9E;      /* desaturated lighter navy for secondary text */
-  --paper: var(--accent-wash); /* page bg carries a subtle mint wash */
+  --ink-soft: #5C5C9E;      
+  --paper: var(--accent-wash); 
   --linen: #ffffff;
   --gray: #f4f4f0;
-  --fill-soft: var(--accent-soft); /* problem section reads as soft mint */
+  --fill-soft: var(--accent-soft); 
   --line-soft: #b8b8b3;
   --ash: #d1d5dc;
 
-  /* Type — Inter only */
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
                'Segoe UI', Roboto, sans-serif;
 
-  /* Radii */
   --r-sm: 8px;
   --r-md: 16px;
   --r-lg: 20px;
@@ -52,9 +40,6 @@ a { color: inherit; text-decoration: none; }
 
 img { max-width: 100%; display: block; }
 
-/* ------------------------------------------------------------
-   Typography roles
-   ------------------------------------------------------------ */
 .display {
   font-size: clamp(48px, 8vw, 92px);
   line-height: 1.1;
@@ -105,9 +90,6 @@ img { max-width: 100%; display: block; }
   text-underline-offset: 8px;
 }
 
-/* ------------------------------------------------------------
-   Buttons
-   ------------------------------------------------------------ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -175,9 +157,6 @@ img { max-width: 100%; display: block; }
 .btn--lg { padding: 14px 28px; font-size: 16px; }
 .btn--xl { padding: 20px 48px; font-size: 18px; margin-top: 48px; }
 
-/* ------------------------------------------------------------
-   Stamps / stickers
-   ------------------------------------------------------------ */
 .stamp {
   display: inline-flex;
   align-items: center;
@@ -202,9 +181,6 @@ img { max-width: 100%; display: block; }
 .stamp--cta-left   { top: 80px; left: 80px; transform: rotate(-8deg); }
 .stamp--cta-right  { top: 120px; right: 100px; transform: rotate(6deg); }
 
-/* ------------------------------------------------------------
-   Top nav
-   ------------------------------------------------------------ */
 .nav {
   display: flex;
   align-items: center;
@@ -235,9 +211,6 @@ img { max-width: 100%; display: block; }
 .nav-links a:hover { border-color: var(--ink); }
 .nav-cta { display: flex; gap: 10px; }
 
-/* ------------------------------------------------------------
-   Hero
-   ------------------------------------------------------------ */
 .hero {
   position: relative;
   padding: 24px 56px 80px;
@@ -279,7 +252,6 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
 }
 
-/* Credit loop diagram */
 .loop {
   position: relative;
   max-width: 920px;
@@ -323,7 +295,7 @@ img { max-width: 100%; display: block; }
   pointer-events: none;
   width: 100%;
   height: 100%;
-  color: var(--ink); /* arrowhead marker inherits via currentColor */
+  color: var(--ink); 
 }
 .loop-arrows path {
   stroke: var(--ink);
@@ -350,9 +322,6 @@ img { max-width: 100%; display: block; }
   white-space: nowrap;
 }
 
-/* ------------------------------------------------------------
-   Problem
-   ------------------------------------------------------------ */
 .problem {
   padding: 80px 56px;
   background: var(--fill-soft);
@@ -417,9 +386,6 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-/* ------------------------------------------------------------
-   How it works
-   ------------------------------------------------------------ */
 .how {
   padding: 96px 56px;
   background: var(--ink);
@@ -481,9 +447,6 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-/* ------------------------------------------------------------
-   Why students (mint section)
-   ------------------------------------------------------------ */
 .why {
   padding: 96px 56px;
   background: var(--accent);
@@ -532,9 +495,6 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-/* ------------------------------------------------------------
-   Features (alternating rows)
-   ------------------------------------------------------------ */
 .features {
   padding: 96px 56px;
   max-width: 1280px;
@@ -600,9 +560,6 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
-/* ------------------------------------------------------------
-   FAQ — pink full bleed
-   ------------------------------------------------------------ */
 .faq {
   padding: 96px 56px;
   background: var(--accent);
@@ -653,9 +610,6 @@ img { max-width: 100%; display: block; }
   line-height: 1.5;
 }
 
-/* ------------------------------------------------------------
-   Final CTA
-   ------------------------------------------------------------ */
 .final-cta {
   padding: 160px 56px;
   text-align: center;
@@ -664,9 +618,6 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
 }
 
-/* ------------------------------------------------------------
-   Footer
-   ------------------------------------------------------------ */
 .footer {
   padding: 56px;
   background: var(--ink);
@@ -706,9 +657,6 @@ img { max-width: 100%; display: block; }
 }
 .footer-col a:hover { opacity: 1; }
 
-/* ------------------------------------------------------------
-   Responsive
-   ------------------------------------------------------------ */
 @media (max-width: 1024px) {
   .nav-links { display: none; }
   .pain-grid { grid-template-columns: repeat(2, 1fr); }
@@ -730,9 +678,6 @@ img { max-width: 100%; display: block; }
   .final-cta { padding: 96px 20px; }
 }
 
-/* ============================================================
-   Fidelity switch (floating toggle button)
-   ============================================================ */
 .fid-switch {
   position: fixed;
   right: 20px;
@@ -778,13 +723,6 @@ img { max-width: 100%; display: block; }
 .fid-switch[aria-pressed="true"] .fid-switch__label .fid-switch__on { display: none; }
 .fid-switch[aria-pressed="true"] .fid-switch__label .fid-switch__off { display: inline; }
 
-/* ============================================================
-   WIREFRAME MODE — mid-fidelity overrides
-   Strips brand color down to grayscale + paper, removes tilts,
-   converts mocks into classic X-cross placeholders.
-   Brand anchors (highlight, "Gana" node) become BLACK stickers
-   so the visual hierarchy survives without color.
-   ============================================================ */
 body.wireframe {
   --paper: #ffffff;
   --accent-wash: #ffffff;
@@ -797,7 +735,6 @@ body.wireframe {
   color: #000;
 }
 
-/* Neutralize brand colors except where it carries meaning */
 body.wireframe .display,
 body.wireframe .t-heading-xl,
 body.wireframe h2,
@@ -812,7 +749,6 @@ body.wireframe .feature-bonus-card p,
 body.wireframe .feature-num,
 body.wireframe .how-sub { color: #6b6b6b; }
 
-/* Borders & dividers — gray instead of navy */
 body.wireframe .btn,
 body.wireframe .pain-card,
 body.wireframe .feature-bonus-card,
@@ -823,10 +759,8 @@ body.wireframe .brand-mark,
 body.wireframe .loop-node,
 body.wireframe .nav-links a:hover { border-color: #b8b8b8; color: #000; }
 
-/* Brand mark — strip mint */
 body.wireframe .brand-mark { background: #ffffff; }
 
-/* Buttons — flat outline, no tilt/shadow at hover */
 body.wireframe .btn {
   background: #ffffff;
   color: #000;
@@ -844,7 +778,6 @@ body.wireframe .btn--navy { background: #ffffff; color: #000; border: 1.5px soli
 body.wireframe .btn--ghost { border-color: transparent; }
 body.wireframe .btn--ghost:hover { background: #f4f4f0; }
 
-/* Stamps — flat, almost no tilt */
 body.wireframe .stamp,
 body.wireframe .stamp--pop,
 body.wireframe .stamp--ink,
@@ -859,21 +792,17 @@ body.wireframe .stamp--mid-left  { transform: rotate(-3deg); }
 body.wireframe .stamp--cta-left  { transform: rotate(-3deg); }
 body.wireframe .stamp--cta-right { transform: rotate(3deg); }
 
-/* Highlight — turn into a black sticker with white text in wireframe */
 body.wireframe .highlight { color: #ffffff; }
 body.wireframe .highlight::before { background: #000; }
 
-/* Wavy underline — turn gray to fit the wireframe */
 body.wireframe .wavy { text-decoration-color: #b8b8b8; }
 
-/* Problem section — neutralize navy borders */
 body.wireframe .problem {
   background: #f4f4f0;
   border-top-color: #c8c8c8;
   border-bottom-color: #c8c8c8;
 }
 
-/* Pain cards — flat, no tilt */
 body.wireframe .pain-card,
 body.wireframe .pain-card--tilt-1,
 body.wireframe .pain-card--tilt-2,
@@ -885,12 +814,10 @@ body.wireframe .pain-card--tilt-4 {
 }
 body.wireframe .pain-card:hover { transform: none !important; }
 
-/* Icons — desaturate to grayscale, lower opacity */
 body.wireframe .pain-icon,
 body.wireframe .why-icon,
 body.wireframe .footer-col i { filter: grayscale(1); opacity: 0.55; color: #6b6b6b; }
 
-/* HOW IT WORKS — invert to light bg */
 body.wireframe .how { background: #ffffff; color: #000; }
 body.wireframe .step h3,
 body.wireframe .step p { color: #000; }
@@ -898,7 +825,6 @@ body.wireframe .step p { color: #6b6b6b; }
 body.wireframe .step-n { color: #c8c8c8; }
 body.wireframe .step-n--accent { color: #000; }
 
-/* Mocks (step + feature) — classic wireframe X-cross */
 body.wireframe .step-mock,
 body.wireframe .feature-mock {
   background:
@@ -908,7 +834,6 @@ body.wireframe .feature-mock {
   border: 1px solid #c8c8c8;
 }
 
-/* Loop diagram — neutralize. "Gana" becomes the BLACK anchor. */
 body.wireframe .loop-node {
   background: #ffffff;
   border: 1px solid #c8c8c8;
@@ -929,7 +854,6 @@ body.wireframe .loop-caption {
   background: #ffffff;
 }
 
-/* WHY (mint section) — flatten to gray */
 body.wireframe .why { background: #f4f4f0; color: #000; }
 body.wireframe .why .t-heading-xl,
 body.wireframe .t-heading-xl--inverse { color: #000; }
@@ -943,7 +867,6 @@ body.wireframe .why-card:hover {
 }
 body.wireframe .why-icon { color: #6b6b6b; }
 
-/* FAQ (mint section) — flatten to white */
 body.wireframe .faq {
   background: #ffffff;
   border-top: 1px solid #c8c8c8;
@@ -951,17 +874,14 @@ body.wireframe .faq {
 }
 body.wireframe .faq-item { border-color: #c8c8c8; }
 
-/* Final CTA */
 body.wireframe .final-cta { background: #ffffff; }
 
-/* Footer (navy) → solid black */
 body.wireframe .footer { background: #000; color: #ffffff; }
 body.wireframe .footer h4,
 body.wireframe .footer-logo,
 body.wireframe .footer a,
 body.wireframe .footer-brand p { color: #ffffff; }
 
-/* Switch button itself in wireframe mode */
 body.wireframe .fid-switch {
   background: #ffffff;
   border-color: #000;
