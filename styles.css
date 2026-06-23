@@ -41,9 +41,9 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
 .display {
-  font-size: clamp(48px, 8vw, 92px);
-  line-height: 1.1;
-  letter-spacing: -3.2px;
+  font-size: clamp(44px, 5.2vw, 72px);
+  line-height: 1.08;
+  letter-spacing: -2.4px;
   font-weight: 500;
   margin: 0;
 }
@@ -175,9 +175,9 @@ img { max-width: 100%; display: block; }
 .stamp--pop { background: var(--pop); }
 .stamp--ink { background: var(--ink); color: var(--linen); }
 .stamp--paper  { background: var(--paper); transform: rotate(4deg); }
-.stamp--abs    { position: absolute; }
+.stamp--abs    { position: absolute; z-index: 3; }
 .stamp--top-right  { top: 60px; right: 90px; transform: rotate(8deg); }
-.stamp--mid-left   { top: 380px; left: 40px; transform: rotate(-6deg); }
+.stamp--mid-left   { top: 470px; right: 470px; transform: rotate(-6deg); }
 .stamp--cta-left   { top: 80px; left: 80px; transform: rotate(-8deg); }
 .stamp--cta-right  { top: 120px; right: 100px; transform: rotate(6deg); }
 
@@ -217,10 +217,23 @@ img { max-width: 100%; display: block; }
   max-width: 1280px;
   margin: 0 auto;
 }
+.hero-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 48px;
+  margin-top: 40px;
+}
 .hero-copy {
-  text-align: center;
-  max-width: 1000px;
-  margin: 40px auto 0;
+  text-align: left;
+  max-width: 560px;
+}
+.hero-media {
+  position: relative;
+}
+.hero-media img {
+  width: 100%;
+  height: auto;
 }
 .eyebrow-pill {
   display: inline-flex;
@@ -240,22 +253,22 @@ img { max-width: 100%; display: block; }
 .lede {
   font-size: 20px;
   color: var(--ink-soft);
-  max-width: 640px;
-  margin: 28px auto 36px;
+  max-width: 520px;
+  margin: 28px 0 36px;
   line-height: 1.4;
 }
 .hero-buttons {
   display: flex;
   gap: 12px;
-  justify-content: center;
-  margin-bottom: 80px;
+  justify-content: flex-start;
+  margin-bottom: 0;
   flex-wrap: wrap;
 }
 
 .loop {
   position: relative;
   max-width: 920px;
-  margin: 0 auto;
+  margin: 96px auto 0;
   height: 360px;
 }
 .loop-node {
@@ -669,6 +682,11 @@ img { max-width: 100%; display: block; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .stamp--abs { display: none; }
   .loop { display: none; }
+  .hero-top { grid-template-columns: 1fr; gap: 32px; }
+  .hero-copy { text-align: center; max-width: 640px; margin-left: auto; margin-right: auto; }
+  .lede { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+  .hero-media { max-width: 560px; margin: 0 auto; }
 }
 
 @media (max-width: 640px) {
